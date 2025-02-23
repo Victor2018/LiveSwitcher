@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource,ResourceName">
+    <corners
+        android:topLeftRadius="@dimen/dp_10"
+        android:bottomLeftRadius="@dimen/dp_10"/>
+    <solid android:color="#33EBEBF5"/>
+</shape>

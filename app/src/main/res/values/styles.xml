@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="TabTextNormalAppearance" parent="TextAppearance.Design.Tab" tools:ignore="ResourceName">
+        <item name="android:textSize">@dimen/dp_32</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="FixTabStyle" parent="Widget.Design.TabLayout" tools:ignore="ResourceName">
+        <item name="tabIndicator">@drawable/bg_tab_indicatior</item>
+        <item name="tabIndicatorColor">@android:color/transparent</item>
+        <item name="tabIndicatorHeight">@dimen/dp_4</item>
+        <item name="android:foreground">@null</item>
+        <item name="tabBackground">@null</item>
+        <item name="tabRippleColor">@null</item>
+        <item name="tabTextAppearance">@style/TabTextNormalAppearance</item>
+        <item name="tabTextColor">@color/white</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabIndicatorFullWidth">false</item>
+    </style>
+    <style name="ScrollableTabStyle" parent="Widget.Design.TabLayout" tools:ignore="ResourceName">
+        <item name="tabIndicator">@drawable/bg_tab_indicatior</item>
+        <item name="tabIndicatorColor">@android:color/transparent</item>
+        <item name="tabIndicatorHeight">@dimen/dp_4</item>
+        <item name="android:foreground">@null</item>
+        <item name="tabBackground">@null</item>
+        <item name="tabRippleColor">@null</item>
+        <item name="tabTextAppearance">@style/TabTextNormalAppearance</item>
+        <item name="tabTextColor">@color/white</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabIndicatorFullWidth">false</item>
+    </style>
+    <!--默认对话框样式-->
+    <style name="BaseDialog" parent="Theme.AppCompat.Light.Dialog">
+        <!--设置背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--是否透明-->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--默认对话框样式-->
+    <style name="BaseNoTitleDialog" parent="BaseDialog">
+        <!-- 是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

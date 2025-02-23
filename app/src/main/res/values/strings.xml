@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LiveSwitcher</string>
+    <string name="permission_camera_rationale_message">This app needs access to your camera so you can take pictures.</string>
+    <string name="current_is_scan">当前是扫码模式，不能编辑</string>
+</resources>

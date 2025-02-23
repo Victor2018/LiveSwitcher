@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_24"
+    android:paddingBottom="@dimen/dp_16"
+    android:paddingStart="@dimen/dp_40"
+    android:paddingEnd="@dimen/dp_10"
+    tools:background="@color/cardview_dark_background"
+    tools:ignore="MissingDefaultResource,ResourceName">
+
+    <TextView
+        android:id="@+id/tv_style_material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/sp_28"
+        android:textColor="@color/white"
+        android:text="样式素材库"
+        android:gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRvTextStyleMaterial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_style_material"
+        android:layout_marginTop="@dimen/dp_20"
+        app:spanCount="4"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+
+    <TextView
+        android:id="@+id/mTvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/mIvContent"
+        app:layout_constraintBottom_toBottomOf="@+id/mIvContent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/sp_28"
+        android:textColor="@color/white"
+        android:text="文本内容"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/mIvContent"
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_36"
+        app:layout_constraintTop_toBottomOf="@+id/mRvTextStyleMaterial"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dp_20"
+        android:src="#ffff00"/>
+
+    <EditText
+        android:id="@+id/mEtContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        app:layout_constraintTop_toBottomOf="@+id/mIvContent"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@drawable/border_33ffffff_radius_8"
+        android:paddingStart="@dimen/dp_15"
+        android:paddingEnd="@dimen/dp_15"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textSize="@dimen/dp_20"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/mTvTextFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mEtContent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dp_36"
+        android:textSize="@dimen/sp_28"
+        android:textColor="@color/white"
+        android:text="字体"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/mTvSelectedTextFont"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_36"
+        app:layout_constraintTop_toBottomOf="@+id/mTvTextFont"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mTvSelectedTextFontSize"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_24"
+        android:paddingStart="@dimen/dp_12"
+        android:paddingEnd="@dimen/dp_32"
+        android:background="@drawable/shape_29ebebf5_radius_8"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/white"
+        android:text="阿里巴巴普惠体- me..."
+        android:gravity="center_vertical"/>
+
+    <ImageView
+        android:layout_width="@dimen/dp_8"
+        android:layout_height="@dimen/dp_8"
+        app:layout_constraintTop_toTopOf="@+id/mTvSelectedTextFont"
+        app:layout_constraintBottom_toBottomOf="@+id/mTvSelectedTextFont"
+        app:layout_constraintEnd_toEndOf="@+id/mTvSelectedTextFont"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:src="#ffff00"/>
+
+    <TextView
+        android:id="@+id/mTvSelectedTextFontSize"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_36"
+        app:layout_constraintBottom_toBottomOf="@+id/mTvSelectedTextFont"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        android:background="@drawable/shape_29ebebf5_radius_8"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/white"
+        android:text="24"
+        android:gravity="center"/>
+
+    <RadioGroup
+        android:id="@+id/mRgTextStyle"
+        android:layout_width="@dimen/dp_184"
+        android:layout_height="@dimen/dp_36"
+        app:layout_constraintTop_toBottomOf="@+id/mTvSelectedTextFont"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dp_24"
+        android:background="@drawable/shape_29ebebf5_radius_4"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mRbStart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_text_style_selector"
+            android:layout_margin="@dimen/dp_4"
+            android:button="@drawable/text_start"
+            android:checked="true"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/mRbCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_text_style_selector"
+            android:layout_margin="@dimen/dp_4"
+            android:button="@drawable/text_center"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/mRbEnd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_text_style_selector"
+            android:layout_margin="@dimen/dp_4"
+            android:button="@drawable/text_end"
+            android:gravity="center" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/mIvTextBold"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_24"
+        android:src="@mipmap/ic_text_bold"
+        app:layout_constraintTop_toTopOf="@+id/mRgTextStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/mRgTextStyle"
+        app:layout_constraintEnd_toStartOf="@+id/mIvItalic"
+        android:layout_marginEnd="@dimen/dp_32"/>
+
+    <ImageView
+        android:id="@+id/mIvItalic"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_24"
+        android:src="@mipmap/ic_text_italic"
+        app:layout_constraintTop_toTopOf="@+id/mRgTextStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/mRgTextStyle"
+        app:layout_constraintEnd_toStartOf="@+id/mIvUnderLine"
+        android:layout_marginEnd="@dimen/dp_32"/>
+
+    <ImageView
+        android:id="@+id/mIvUnderLine"
+        android:layout_width="@dimen/dp_22"
+        android:layout_height="@dimen/dp_24"
+        android:src="@mipmap/ic_text_under_line"
+        app:layout_constraintTop_toTopOf="@+id/mRgTextStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/mRgTextStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/dp_20"/>
+
+    <ImageView
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@mipmap/ic_del_layer"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

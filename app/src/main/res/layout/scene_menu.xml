@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_24"
+    android:paddingBottom="@dimen/dp_16"
+    android:paddingStart="@dimen/dp_40"
+    android:paddingEnd="@dimen/dp_10"
+    tools:background="@color/cardview_dark_background"
+    tools:ignore="MissingDefaultResource,ResourceName">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/sp_38"
+        android:textColor="@color/white"
+        android:text="场景菜单"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@mipmap/ic_del_layer"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

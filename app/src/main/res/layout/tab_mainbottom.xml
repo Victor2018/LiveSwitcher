@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tab_main_bottom_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="场景"
+        android:textColor="#B8FFFFFF"
+        android:textSize="@dimen/dp_32" />
+
+    <View
+        android:id="@+id/tab_main_bottom_title_line"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_4"
+        android:layout_below="@id/tab_main_bottom_title_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@drawable/tab_indicator_gradient"
+        android:visibility="invisible" />
+
+</RelativeLayout>

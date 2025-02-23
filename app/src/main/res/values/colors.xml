@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="material_drag_rect_color">#ffff6600</color>
+    <color name="sys_primary_color">#FFFF6600</color>
+    <color name="color_0091FF">#0091FF</color>
+    <color name="colorPrimary">@color/color_0091FF</color>
+    <color name="colorPrimaryDark">@color/color_0091FF</color>
+    <color name="colorAccent">@color/color_0091FF</color>
+    <color name="startColor">#6398FA</color>
+    <color name="centerColor">#9F67FF</color>
+    <color name="endColor">#F07969</color>
+
+</resources>

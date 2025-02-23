@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="opera_area_tab_titles">
+        <item>画面</item>
+        <item>声音</item>
+    </string-array>
+
+    <string-array name="bottom_area_tab_titles">
+        <item>场景</item>
+        <item>App</item>
+<!--        <item>图片</item>-->
+<!--        <item>视频</item>-->
+<!--        <item>文字</item>-->
+        <item>相机</item>
+    </string-array>
+
+</resources>

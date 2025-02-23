@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_40">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_delete_tip_dialog"
+        android:paddingTop="@dimen/dp_60"
+        android:paddingBottom="@dimen/dp_60"
+        android:paddingStart="@dimen/dp_32"
+        android:paddingEnd="@dimen/dp_32">
+
+        <TextView
+            android:id="@+id/mTvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:text="温馨提醒"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_34" />
+
+        <TextView
+            android:id="@+id/mTvTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/mTvTitle"
+            android:layout_marginTop="@dimen/dp_50"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_28"
+            android:text="确定要删除XXX吗？" />
+
+        <TextView
+            android:id="@+id/mTvCancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_74"
+            android:layout_marginTop="@dimen/dp_50"
+            android:background="@drawable/shape_del_gradient_radius_8"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_30"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/mTvConfirm"
+            app:layout_constraintTop_toBottomOf="@id/mTvTip" />
+
+        <TextView
+            android:id="@+id/mTvConfirm"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_74"
+            android:background="@drawable/shape_29ebebf5_radius_8"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_30"
+            app:layout_constraintStart_toEndOf="@id/mTvCancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mTvCancel"
+            android:layout_marginStart="@dimen/dp_42"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
