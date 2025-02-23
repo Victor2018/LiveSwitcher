@@ -30,6 +30,8 @@ class MainActivity : AppCompatActivity() {
         VirtualScreenHelper.instance.init(this)
 
         sendCheckAppRequest()
+
+//        https://github.com/Reginer/aosp-android-jar
     }
 
     override fun onResume() {
